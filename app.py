@@ -6,7 +6,6 @@ for i in range(1, 1065):
      d = str(i) + ' days ago'
      with open('file.txt', 'a') as File:
             File.write(d)
-    os.system('git add .')
-    os.system('git commit -m "commit" ')
+    os.system('git commit -am "commit" ')
 
 os.system('git push -u origin main')
